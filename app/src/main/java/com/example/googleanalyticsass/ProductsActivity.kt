@@ -144,7 +144,7 @@ class ProductsActivity : AppCompatActivity(), ProductAdminAdapter.onProductsItem
     private fun trackScreen(screenName:String){
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, screenName)
-        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, "MainActivity")
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, "ProductsActivity")
         mFirebaseAnalytics!!.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 

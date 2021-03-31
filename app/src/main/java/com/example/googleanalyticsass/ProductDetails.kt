@@ -58,7 +58,7 @@ class ProductDetails : AppCompatActivity() {
     private fun trackScreen(screenName:String){
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, screenName)
-        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, "MainActivity")
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, "ProductDetails")
         mFirebaseAnalytics!!.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
